@@ -6,7 +6,7 @@ def get_args():
     i_desc = "Path to image- default = 1.png"
     parser._action_groups.pop()
     optional = parser.add_argument_group('optional arguments')
-    optional.add_argument("-i", help=i_desc, default="1.png")
+    optional.add_argument("-i", help=i_desc, default=0)
     args = parser.parse_args()
     return args
 
